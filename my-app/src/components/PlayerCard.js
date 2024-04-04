@@ -1,8 +1,18 @@
 export default function PlayerCard(props) {
   
+  const twoFuncsOver = () => {
+    props.deletePlayer(props.name);
+    props.addOver(props);
+  }
+
+  const twoFuncsUnder = () => {
+    props.deletePlayer(props.name);
+    props.addUnder(props);
+  }
+
   return (
-    <div class="wrapper">
-      <div class="inner-box">
+    <div className="wrapper">
+      <div className="inner-box">
           <hstack>
             <img src={props.image} />  
             <div>{props.name}</div>
@@ -10,8 +20,8 @@ export default function PlayerCard(props) {
             <div>{props.game}</div>
             <div>{props.line}</div>
             <div>{props.category}</div>
-            <button onClick={() => props.addOver(props)}> Over </button>
-            <button onClick={() => props.addUnder(props)}> Under </button>
+            <button onClick={() => twoFuncsOver()}> Over </button>
+            <button onClick={() => twoFuncsUnder()}> Under </button>
           </hstack>
       </div>
     </div>

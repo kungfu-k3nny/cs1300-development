@@ -5,7 +5,23 @@
       "category": "points",
       "game": "vs HOU",
       "team": "GSW",
-      "image": "images/stephen_curry.png"
+      "image": "images/stephen_curry.webp"
+    },
+    {
+      "name": "Andrew Wiggins",
+      "line": 14.5,
+      "category": "points",
+      "game": "vs HOU",
+      "team": "GSW",
+      "image": "images/andrew_wiggins.png"
+    },
+    {
+      "name": "Nikola Jokic",
+      "line": 13.0,
+      "category": "rebounds",
+      "game": "vs LAC",
+      "team": "DEN",
+      "image": "images/nikola_jokic.png"
     }
   ]
   
