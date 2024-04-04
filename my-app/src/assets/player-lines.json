@@ -30,6 +30,26 @@
       "sport": "NBA"
     },
     {
+      "name": "Brandin Podziemski",
+      "line": 4.5,
+      "category": "rebounds",
+      "game": "vs HOU",
+      "team": "GSW",
+      "image": "images/brandin_podziemski.avif",
+      "popularity": "10.3k",
+      "sport": "NBA"
+    },
+    {
+      "name": "Klay Thompson",
+      "line": 17.0,
+      "category": "points",
+      "game": "vs HOU",
+      "team": "GSW",
+      "image": "images/klay_thompson.avif",
+      "popularity": "13.5k",
+      "sport": "NBA"
+    },
+    {
       "name": "Faker",
       "line": 4.0,
       "category": "kills",
