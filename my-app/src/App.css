@@ -1,81 +1,79 @@
-.App {
+body {
+  font-family: 'Cabin', sans-serif;
+  background-color: #b39e80;
+}
+
+h1 {
+  margin-top: 10px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Sets the default font for the page */
+  color: #0A090C; /* Dark text color for contrast */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-family: 'Cabin', sans-serif;
+  background-color: #F0EDEE;
+  height: 2vw;
+  width: 20vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  display: flex; /* Enables flex layout */
+  text-align: center;
+  min-height: 100vh; /* Optional: Makes sure your app fills the viewport height */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.view-section {
+  flex: 2; /* Takes up 2 parts of the flex container */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.app {
-  display: flex;
-  justify-content: space-between;
-}
-
-.player-cards {
-  flex-grow: 1;
+.view-section button{
+  width: 35.5vw;
+  margin: 1vw;
 }
 
 .cart-container {
-  width: 300px;
+  width: 19vw;
+  height: 35vw;
+  min-width: 190px;
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Aligns children vertically */
+  align-items: center; /* Centers children horizontally */
+  flex: 1; /* Takes up 1 part of the flex container, making this one-third */
+  padding: 20px;
+  overflow: auto; /* Adds scroll if the content overflows */
+  border: 1px solid #0A090C;
+  border-radius: 5px;
+}
+
+.player-cards {
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: space-around; /* Evenly spaces the items, including space at the edges */
 }
 
 .player-card {
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
+  width: 15vw; /* Adjusts width responsively */
+  height: auto; /* Adjusts height based on content */
+  min-width: 150px;
+  margin: 8px;
+  border: 1px solid #000000;
   text-align: center;
+  border-radius: 5px;
+  background-color: #90a2f0;
 }
 
-.cart {
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
+.player-card button{
+  width: 6vw;
+  margin: .5vw;
 }
 
-.wrapper {
-  border: 2px solid #000; /* Adds a border to visually wrap the inner div */
-  padding: 20px; /* Adds some space between the inner div and the border */
-  display: inline-block; /* Ensures the wrapper fits the content size */
-}
-
-.inner-box {
-  /* Your inner box styles */
-  padding: 10px;
-  background-color: #f0f0f0; /* Light grey background */
+.player-card p { /* Assuming your card uses these */
+  font-size: calc(0.5vw + 10px); /* Basic responsive sizing */
+  font-size: clamp(10px, 1vw, 18px); /* Ensures font size is between 12px and 18px */
 }
 
 img {
-  width: 300px;
-  height: auto; /* Keeps the aspect ratio */
+  width: 14vw;
+  min-width: 140px;
 }

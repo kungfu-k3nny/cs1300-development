@@ -15,40 +15,58 @@ function App() {
       playerCard: playerCard,
       isOver: "Over"
     }
-    setCartItems([...cartItems, item]);
+    const updatedCartItems = cartItems.filter(cartCard => cartCard.playerCard.name !== playerCard.name);
+    setCartItems([...updatedCartItems, item]);
   }
   const addUnderProp = (playerCard) => {
     const item = {
       playerCard: playerCard,
       isOver: "Under"
     }
-    setCartItems([...cartItems, item]);
+    const updatedCartItems = cartItems.filter(cartCard => cartCard.playerCard.name !== playerCard.name);
+    setCartItems([...updatedCartItems, item]);
   }
-
   const deletePlayer = (playerName) => {
-    console.log("Deleting player:", playerName); // Debugging log
     const updatedCartItems = cartItems.filter(item => item.playerCard.name !== playerName);
-    console.log("Updated Cart Items:", updatedCartItems); // Debugging log
     setCartItems(updatedCartItems);
   }
+  const nothing = () => {}
+  
+  const [activeTab, setActiveTab] = useState("NBA"); // Default to NBA, adjust as needed
 
   return (
-    <div className="App">
-      <div className="player-cards">
-        {PlayerLinesData.map((item, index) => (
-          <div>
-            <PlayerCard name={item.name} image={item.image} team={item.team} game={item.game} line={item.line} category={item.category} addOver={addOverProp} addUnder={addUnderProp} deletePlayer={deletePlayer}/>
-            <br></br>
+    <div><h1>Chug's Sports Book</h1>
+      <div className="App">
+        <div className="view-section">
+          <button onClick={() => setActiveTab("NBA")} style={{ fontWeight: activeTab === "NBA" ? "bold" : "normal" }}>NBA</button>
+          <button onClick={() => setActiveTab("LOL")} style={{ fontWeight: activeTab === "LOL" ? "bold" : "normal" }}>LOL</button>
+          <div className="player-cards">
+            {PlayerLinesData.filter(item => item.sport === activeTab).map((item, index) => (
+              <div>
+                <PlayerCard name={item.name} image={item.image} team={item.team} game={item.game}
+                line={item.line} category={item.category} addOver={addOverProp} addUnder={addUnderProp}
+                deletePlayer={deletePlayer}/>
+                <br></br>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className="cart-container">
-        {cartItems.map((item, index) => (
-          <div>
-            <CartItem name={item.playerCard.name} image={item.playerCard.image} team={item.playerCard.team} game={item.playerCard.game} line={item.playerCard.line} category={item.playerCard.category} isOver={item.isOver} deletePlayer={deletePlayer}></CartItem>
-            <br></br>
+        </div>
+        
+        <div>
+          <h1>Your Lines</h1>
+          <div className="cart-container">
+            
+            {cartItems.map((item, index) => (
+              <div>
+                <CartItem name={item.playerCard.name} image={item.playerCard.image}
+                team={item.playerCard.team} game={item.playerCard.game} line={item.playerCard.line}
+                category={item.playerCard.category} isOver={item.isOver} deletePlayer={deletePlayer}></CartItem>
+                <br></br>
+              </div>
+            ))}
           </div>
-        ))}
+          <button onClick={() => nothing()}> Submit </button>
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,9 @@
       "category": "points",
       "game": "vs HOU",
       "team": "GSW",
-      "image": "images/stephen_curry.webp"
+      "image": "images/stephen_curry.webp",
+      "popularity": "50.2k",
+      "sport": "NBA"
     },
     {
       "name": "Andrew Wiggins",
@@ -13,7 +15,9 @@
       "category": "points",
       "game": "vs HOU",
       "team": "GSW",
-      "image": "images/andrew_wiggins.png"
+      "image": "images/andrew_wiggins.png",
+      "popularity": "30.6k",
+      "sport": "NBA"
     },
     {
       "name": "Nikola Jokic",
@@ -21,7 +25,59 @@
       "category": "rebounds",
       "game": "vs LAC",
       "team": "DEN",
-      "image": "images/nikola_jokic.png"
+      "image": "images/nikola_jokic.avif",
+      "popularity": "39.3k",
+      "sport": "NBA"
+    },
+    {
+      "name": "Faker",
+      "line": 4.0,
+      "category": "kills",
+      "game": "vs DRX",
+      "team": "T1",
+      "image": "images/faker.webp",
+      "popularity": "12.7k",
+      "sport": "LOL"
+    },
+    {
+      "name": "Zeus",
+      "line": 3.0,
+      "category": "kills",
+      "game": "vs DRX",
+      "team": "T1",
+      "image": "images/zeus.webp",
+      "popularity": "9.3k",
+      "sport": "LOL"
+    },
+    {
+      "name": "Keria",
+      "line": 2.0,
+      "category": "kills",
+      "game": "vs DRX",
+      "team": "T1",
+      "image": "images/keria.webp",
+      "popularity": "8.2k",
+      "sport": "LOL"
+    },
+    {
+      "name": "Gumayusi",
+      "line": 7.0,
+      "category": "kills",
+      "game": "vs DRX",
+      "team": "T1",
+      "image": "images/gumayusi.webp",
+      "popularity": "6.3k",
+      "sport": "LOL"
+    },
+    {
+      "name": "Oner",
+      "line": 2.0,
+      "category": "kills",
+      "game": "vs DRX",
+      "team": "T1",
+      "image": "images/oner.webp",
+      "popularity": "5.4k",
+      "sport": "LOL"
     }
   ]
   
