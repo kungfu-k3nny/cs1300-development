@@ -4,10 +4,12 @@ body {
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 16px;
   text-align: center;
   font-family: 'Montserrat', sans-serif; /* Sets the default font for the page */
   color: #0A090C; /* Dark text color for contrast */
+  font-size: calc(0.5vw + 10px); /* Basic responsive sizing */
+  font-size: clamp(16px, 3vw, 36px); /* Ensures font size is between 12px and 18px */
 }
 
 button {
@@ -15,6 +17,35 @@ button {
   background-color: #F0EDEE;
   height: 2vw;
   width: 20vw;
+  min-height: 20px;
+  min-width: 60px;
+  font-size: calc(0.5vw + 10px); /* Basic responsive sizing */
+  font-size: clamp(10px, 1vw, 18px); /* Ensures font size is between 12px and 18px */
+}
+
+.sort-dropdown {
+  display: flex; /* Enables flex layout */
+  text-align: center;
+  justify-content: center;
+  height: 2vw;
+  width: 14vw;
+  min-height: 20px;
+  min-width: 60px;
+  font-size: calc(0.5vw + 10px); /* Basic responsive sizing */
+  font-size: clamp(10px, 1vw, 18px); /* Ensures font size is between 12px and 18px */
+}
+
+.sort-dropdown {
+  vertical-align: middle;
+}
+
+select {
+  height: 2vw;
+  width: 10vw;
+  min-height: 20px;
+  min-width: 60px;
+  font-size: calc(0.5vw + 10px); /* Basic responsive sizing */
+  font-size: clamp(10px, 1vw, 18px); /* Ensures font size is between 12px and 18px */
 }
 
 .App {
@@ -23,13 +54,29 @@ button {
   min-height: 100vh; /* Optional: Makes sure your app fills the viewport height */
 }
 
-.view-section {
+.selection-section {
   flex: 2; /* Takes up 2 parts of the flex container */
 }
 
-.view-section button{
-  width: 35.5vw;
-  margin: 1vw;
+.top-button-section button{
+  width: 30vw;
+}
+
+.top-button-section {
+  display: flex; /* This makes the container a flex container and aligns its children (the divs) horizontally */
+  justify-content: center; /* This centers the child elements horizontally */
+  gap: 1vw;
+}
+
+.sorting-section {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.sorting-section button{
+  width: 14vw;
 }
 
 .cart-container {
@@ -43,10 +90,11 @@ button {
   padding: 20px;
   overflow: auto; /* Adds scroll if the content overflows */
   border: 1px solid #0A090C;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 .player-cards {
+  margin-top: 1vw;
   display: flex; /* Enables flexbox layout */
   flex-wrap: wrap; /* Allows items to wrap onto the next line */
   justify-content: space-around; /* Evenly spaces the items, including space at the edges */
@@ -61,6 +109,7 @@ button {
   text-align: center;
   border-radius: 5px;
   background-color: #90a2f0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .player-card button{
@@ -76,4 +125,8 @@ button {
 img {
   width: 14vw;
   min-width: 140px;
+}
+
+.cart-section {
+  
 }

@@ -7,7 +7,10 @@ export default function PlayerCard(props) {
           <div><p>{props.name} - {props.team}</p>
           <p>{props.game}</p>
           <p>{props.line}</p>
-          <p>{props.category}</p></div>
+          <p>{props.category}</p>
+          <p>{props.time}</p>
+          <p>{props.popularity}</p>
+          </div>
           <button onClick={() => props.addOver(props)}> Over </button>
           <button onClick={() => props.addUnder(props)}> Under </button>
         </hstack>

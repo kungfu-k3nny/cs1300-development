@@ -7,6 +7,7 @@
       "team": "GSW",
       "image": "images/stephen_curry.webp",
       "popularity": "50.2k",
+      "time": "7:30 PM EST",
       "sport": "NBA"
     },
     {
@@ -16,7 +17,19 @@
       "game": "vs HOU",
       "team": "GSW",
       "image": "images/andrew_wiggins.png",
+      "popularity": "23.2k",
+      "time": "7:30 PM EST",
+      "sport": "NBA"
+    },
+    {
+      "name": "Andrew Wiggins",
+      "line": 6.0,
+      "category": "rebounds",
+      "game": "vs HOU",
+      "team": "GSW",
+      "image": "images/andrew_wiggins.png",
       "popularity": "30.6k",
+      "time": "7:30 PM EST",
       "sport": "NBA"
     },
     {
@@ -26,7 +39,19 @@
       "game": "vs LAC",
       "team": "DEN",
       "image": "images/nikola_jokic.avif",
-      "popularity": "39.3k",
+      "popularity": "27.3k",
+      "time": "7:10 PM EST",
+      "sport": "NBA"
+    },
+    {
+      "name": "Nikola Jokic",
+      "line": 24.5,
+      "category": "points",
+      "game": "vs LAC",
+      "team": "DEN",
+      "image": "images/nikola_jokic.avif",
+      "popularity": "27.9k",
+      "time": "7:10 PM EST",
       "sport": "NBA"
     },
     {
@@ -37,6 +62,18 @@
       "team": "GSW",
       "image": "images/brandin_podziemski.avif",
       "popularity": "10.3k",
+      "time": "7:30 PM EST",
+      "sport": "NBA"
+    },
+    {
+      "name": "Brandin Podziemski",
+      "line": 7.0,
+      "category": "points",
+      "game": "vs HOU",
+      "team": "GSW",
+      "image": "images/brandin_podziemski.avif",
+      "popularity": "5.8k",
+      "time": "7:30 PM EST",
       "sport": "NBA"
     },
     {
@@ -47,6 +84,7 @@
       "team": "GSW",
       "image": "images/klay_thompson.avif",
       "popularity": "13.5k",
+      "time": "7:30 PM EST",
       "sport": "NBA"
     },
     {
@@ -57,6 +95,18 @@
       "team": "T1",
       "image": "images/faker.webp",
       "popularity": "12.7k",
+      "time": "3:30 AM EST",
+      "sport": "LOL"
+    },
+    {
+      "name": "Faker",
+      "line": 4.0,
+      "category": "assists",
+      "game": "vs DRX",
+      "team": "T1",
+      "image": "images/faker.webp",
+      "popularity": "2.6k",
+      "time": "3:30 AM EST",
       "sport": "LOL"
     },
     {
@@ -67,6 +117,7 @@
       "team": "T1",
       "image": "images/zeus.webp",
       "popularity": "9.3k",
+      "time": "3:30 AM EST",
       "sport": "LOL"
     },
     {
@@ -77,6 +128,18 @@
       "team": "T1",
       "image": "images/keria.webp",
       "popularity": "8.2k",
+      "time": "3:30 AM EST",
+      "sport": "LOL"
+    },
+    {
+      "name": "Keria",
+      "line": 11.0,
+      "category": "assists",
+      "game": "vs DRX",
+      "team": "T1",
+      "image": "images/keria.webp",
+      "popularity": "9.1k",
+      "time": "3:30 AM EST",
       "sport": "LOL"
     },
     {
@@ -87,6 +150,7 @@
       "team": "T1",
       "image": "images/gumayusi.webp",
       "popularity": "6.3k",
+      "time": "3:30 AM EST",
       "sport": "LOL"
     },
     {
@@ -97,6 +161,51 @@
       "team": "T1",
       "image": "images/oner.webp",
       "popularity": "5.4k",
+      "time": "3:30 AM EST",
+      "sport": "LOL"
+    },
+    {
+      "name": "Kiin",
+      "line": 2.0,
+      "category": "kills",
+      "game": "vs KTR",
+      "team": "GENG",
+      "image": "images/kiin.webp",
+      "popularity": "3.2k",
+      "time": "4:00 AM EST",
+      "sport": "LOL"
+    },
+    {
+      "name": "Canyon",
+      "line": 2.0,
+      "category": "kills",
+      "game": "vs KTR",
+      "team": "GENG",
+      "image": "images/canyon.webp",
+      "popularity": "3.1k",
+      "time": "4:00 AM EST",
+      "sport": "LOL"
+    },
+    {
+      "name": "Canyon",
+      "line": 9.0,
+      "category": "assists",
+      "game": "vs KTR",
+      "team": "GENG",
+      "image": "images/canyon.webp",
+      "popularity": "4.4k",
+      "time": "4:00 AM EST",
+      "sport": "LOL"
+    },
+    {
+      "name": "Chovy",
+      "line": 6.0,
+      "category": "kills",
+      "game": "vs KTR",
+      "team": "GENG",
+      "image": "images/chovy.webp",
+      "popularity": "7.3k",
+      "time": "4:00 AM EST",
       "sport": "LOL"
     }
   ]
